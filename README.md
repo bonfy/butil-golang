@@ -20,6 +20,13 @@ func main() {
 }
 ```
 
+### Log
+
+
+* func InitLogFileWithPrefix(f *os.File, prefix string)
+* func InitLogFile(f *os.File)
+
+
 ### Type
 
 * func StringToUint(s string) (uint, error)
@@ -31,5 +38,4 @@ func main() {
 
 * func WriteJsonOK(w http.ResponseWriter) 
 * func WriteJsonErr(w http.ResponseWriter, msg string)
-* func WriteSingleObjectStatus(w http.ResponseWriter, obj interface{})
-* func WriteListObjectStatus(w http.ResponseWriter, obj []interface{})  
+* func WriteJsonObject(w http.ResponseWriter, obj interface{}) 
