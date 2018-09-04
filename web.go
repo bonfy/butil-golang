@@ -31,6 +31,7 @@ type RespListResult struct {
 
 // Write JSON Status
 
+// writeJsonStatus func
 func writeJsonStatus(w http.ResponseWriter, status string, msg string) {
 	result := RespStatus{Status: status}
 

@@ -16,7 +16,7 @@ func TestStringToUint_1(t *testing.T) {
 func TestStringToUint_2(t *testing.T) {
 	// -1 can not convert to uint
 	_, err := StringToUint("-1")
-	// t.Log(err.Error())
+	t.Log(err.Error())
 	if err == nil {
 		t.Fatalf("err should not be nil: -1")
 	}
